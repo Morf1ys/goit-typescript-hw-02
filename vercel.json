@@ -10,10 +10,13 @@
   ],
   "routes": [
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
   ],
   "installCommand": "npm install && npm install -g typescript",
-  "buildCommand": "tsc && npm run build"
+  "buildCommand": "npm run build"
 }

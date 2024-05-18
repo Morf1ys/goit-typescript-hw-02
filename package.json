@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prebuild": "./scripts/fix_permissions.sh",
+    "prebuild": "chmod +x ./node_modules/.bin/tsc",
     "start": "vite",
-    "build": "./scripts/tsc.sh && vite build",
+    "build": "npm run prebuild && tsc && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -39,4 +39,3 @@
     "vite": "^5.1.6"
   }
 }
-

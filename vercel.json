@@ -14,6 +14,6 @@
       "dest": "/index.html"
     }
   ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  "installCommand": "npm install && npm install -g typescript",
+  "buildCommand": "tsc && npm run build"
 }

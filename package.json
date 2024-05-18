@@ -1,11 +1,12 @@
 {
-  "name": "goit-react-hw-01",
+  "name": "goit-typescript-hw-02",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prebuild": "./scripts/fix_permissions.sh",
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "./scripts/tsc.sh && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -38,3 +39,4 @@
     "vite": "^5.1.6"
   }
 }
+

@@ -1,0 +1,22 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 115px;
+  width: 100%;
+  margin-bottom: 60px;
+  /* z-index: 990; */
+  /* position: absolute; */
+  list-style: none;
+}
+
+.liphoto {
+  flex-basis: calc((100% - 45px) / 5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: zoom-in;
+}
+.liphoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

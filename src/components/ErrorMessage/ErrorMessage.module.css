@@ -1,0 +1,16 @@
+.cont-err {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 350px;
+}
+.err-msg {
+  z-index: 999;
+  font-size: 50px;
+  text-align: center;
+}
+.BiError {
+  color: red;
+  /* position: relative; */
+}
